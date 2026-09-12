@@ -54,7 +54,7 @@ router2.post('/login', TimeLimiter, async(req, res) => {
 
     const { data: user, error } = await supabase
     .schema('sih')
-    .from('siuser_profile')
+    .from('user_profile')
     .select('*')
     .eq('username', username)
     .eq('password', password)
