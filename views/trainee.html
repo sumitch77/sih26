@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainee Registration | SkillTrack Maharashtra</title>
+<link rel="stylesheet" href="/output.css">
+  </head>
+
+  <body
+    class="min-h-screen bg-[#f7f5f0] bg-[radial-gradient(rgba(20,33,61,0.08)_1px,transparent_1px)] bg-[length:22px_22px] flex items-center justify-center px-4 py-8"
+  >
+    <div
+      class="grid w-full max-w-6xl grid-cols-1 overflow-hidden rounded-3xl border border-[#14213d]/10 bg-white shadow-[0_24px_70px_rgba(20,33,61,0.12)] lg:min-h-[calc(100vh-4rem)] lg:grid-cols-[31%_1fr]"
+    >
+      <aside
+        class="relative overflow-hidden bg-[#14213d] p-7 text-white sm:p-10"
+      >
+        <div
+          class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e06c3b] font-[Space_Grotesk] text-lg font-bold tracking-wide text-white shadow-[0_12px_24px_rgba(224,108,59,0.25)]"
+          aria-hidden="true"
+        >
+          ST
+        </div>
+        <p
+          class="mt-9 text-xs font-bold uppercase tracking-[0.14em] text-[#f7b49a]"
+        >
+          Join the network
+        </p>
+        <h1
+          class="mt-3 max-w-xs font-[Space_Grotesk] text-4xl font-bold leading-tight text-white sm:text-5xl"
+        >
+          Your next opportunity starts here.
+        </h1>
+        <p class="mt-5 max-w-xs leading-7 text-[#b6c0d1]">
+          Create your trainee profile so verified programs and employment
+          pathways can find you.
+        </p>
+        <div
+          class="relative z-10 mt-16 grid gap-4 text-sm text-[#d6ddeb] max-lg:hidden"
+        >
+          <div>
+            <span
+              class="mr-2.5 inline-grid h-7 w-7 place-items-center rounded-full border border-white/30 text-xs font-bold text-[#f7b49a]"
+              >01</span
+            >Tell us about yourself
+          </div>
+          <div>
+            <span
+              class="mr-2.5 inline-grid h-7 w-7 place-items-center rounded-full border border-white/30 text-xs font-bold text-[#f7b49a]"
+              >02</span
+            >Get verified by the Authority
+          </div>
+          <div>
+            <span
+              class="mr-2.5 inline-grid h-7 w-7 place-items-center rounded-full border border-white/30 text-xs font-bold text-[#f7b49a]"
+              >03</span
+            >Start tracking your progress
+          </div>
+        </div>
+      </aside>
+
+      <main class="min-w-0 bg-white p-8 sm:p-14 lg:p-16">
+        <a
+          class="mb-8 inline-flex text-sm text-[#667085] no-underline hover:text-[#bd4e27]"
+          href="/"
+          >&larr; Back to SkillTrack</a
+        >
+        <div class="mb-8 max-w-xl">
+          <h1
+            class="font-[Space_Grotesk] text-4xl font-bold leading-tight text-[#14213d] sm:text-5xl"
+          >
+            Trainee registration
+          </h1>
+          <p class="mt-3 text-[#667085]">
+            Submit your details for Authority verification.
+          </p>
+        </div>
+
+        <div>
+          <div id="traineeForm" class="mb-6 max-w-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Name *
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Phone *
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Email *
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="district"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  District *
+                </label>
+
+                <input
+                  type="text"
+                  id="district"
+                  name="district"
+                  placeholder="Enter your district"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="qualification"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Qualification *
+                </label>
+
+                <input
+                  type="text"
+                  id="qualification"
+                  name="qualification"
+                  placeholder="Enter your highest qualification"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="gender"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Gender *
+                </label>
+
+                <select
+                  id="gender"
+                  name="gender"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+            
+
+              <div>
+                <label
+                  for="password"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Password *
+                </label>
+
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Create a password"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-slate-400"
+                />
+              </div>
+
+              <div class="md:col-span-2">
+                <label
+                  for="confirm_password"
+                  class="block text-sm font-medium text-slate-700 mb-2"
+                >
+                  Confirm Password *
+                </label>
+
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="Confirm your password"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-slate-400"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-start gap-3">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required
+                class="mt-1 w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
+              />
+
+              <label for="consent" class="text-sm leading-6 text-slate-600">
+                I consent to the collection and use of my information for
+                registration, training, employment tracking, and verification
+                purposes. I confirm that the information provided by me is
+                accurate. *
+              </label>
+            </div>
+            <p
+              data-error-for="consent"
+              class="ml-7 mt-1 hidden text-sm text-red-600"
+              role="alert"
+            >
+              Consent is required.
+            </p>
+
+            <button
+              type="submit"
+              class="mt-7 w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white shadow-[0_8px_18px_rgba(37,99,235,0.22)] transition duration-200 hover:bg-blue-700 hover:-translate-y-px active:translate-y-0"
+            >
+              Submit Registration
+            </button>
+        </div>
+        </div>
+
+        <p class="text-center text-sm text-slate-500 mt-6">
+          Your information is reviewed securely.
+        </p>
+      </main>
+    </div>
+    <script>
+      const traineeForm = document.querySelector("#traineeForm");
+      const name = document.querySelector("#name");
+      const phone = document.querySelector("#phone");
+      const email = document.querySelector("#email");
+      const district = document.querySelector("#district");
+      const gender = document.querySelector("#gender");
+      const qualification = document.querySelector("#qualification");
+      const password = document.querySelector("#password");
+      const confirm_password = document.querySelector("#confirm_password");
+      const consent = document.querySelector("#consent");
+      const showTraineeError = (field, message) => {
+        let error = document.querySelector(`[data-error-for="${field.id}"]`);
+        if (!error) {
+          error = document.createElement("p");
+          error.dataset.errorFor = field.id;
+          error.className = "mt-1 text-sm text-red-600";
+          error.setAttribute("role", "alert");
+          field.parentElement.append(error);
+        }
+        field.classList.toggle("border-red-500", Boolean(message));
+        field.classList.toggle("border-slate-300", !message);
+        error.textContent = message;
+        error.classList.toggle("hidden", !message);
+      };
+
+      const validateTraineeField = (field) => {
+        const value =
+          field.type === "checkbox" ? field.checked : field.value.trim();
+        if (field.type === "checkbox" && !value) return "Consent is required.";
+        if (!value)
+          return `${field.labels[0].textContent.trim().replace(/\s*\*\s*$/, "")} is required.`;
+        if (
+          field.type === "email" &&
+          !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)
+        )
+          return "Enter a valid email address.";
+        if (field.type === "tel" && !/^\+?[0-9\s-]{7,15}$/.test(field.value))
+          return "Enter a valid phone number.";
+        if (field.type === "password" && field.value.length < 8)
+          return "Password must be at least 8 characters.";
+        if (
+          field.id === "confirm_password" &&
+          field.value !== document.getElementById("password").value
+        )
+          return "Passwords do not match.";
+        return "";
+      };
+
+      traineeForm.addEventListener("click", async(event) => {
+        event.preventDefault();
+        let valid = true;
+        traineeForm
+          .querySelectorAll("input[required], select[required]")
+          .forEach((field) => {
+            const message = validateTraineeField(field);
+            showTraineeError(field, message);
+            valid = valid && !message;
+          });
+        if (valid) {
+                const loginResponse = await fetch('/traineelogin ', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username:name.value,
+                password:password.value,
+                phone:phone.value,
+                email:email.value,
+                district:district.value,
+                gender:gender.value,
+                qualification:qualification.value,
+                consent:consent.checked,
+                confirm_password:confirm_password.value
+            })
+        });
+
+        const data2 = await loginResponse.json();
+        if(data2.success) {
+          
+            window.location.href = '/traineedashboard';
+        } else {
+          
+            showTraineeError(username, data2.message || 'Invalid username or password.');
+        }
+
+      
+        }else{
+          showTraineeError(username, 'Please fill in all required fields.');
+        }
+      });
+
+      traineeForm.querySelectorAll("input, select").forEach((field) => {
+        field.addEventListener("input", () => showTraineeError(field, ""));
+        field.addEventListener("change", () => showTraineeError(field, ""));
+      });
+    </script>
+  </body>
+</html>

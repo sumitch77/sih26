@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="/output.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-bgapp text-[#16223f] text-sm font-sans m-0">
+
+<div class="grid grid-cols-[248px_1fr] min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="bg-white border-r border-bordercol p-5 px-4 flex flex-col">
+    <div class="flex items-center gap-2.5 px-1">
+      <div class="w-9 h-9 rounded-[9px] bg-navy text-white flex items-center justify-center flex-shrink-0">
+        <svg viewBox="0 0 24 24" fill="none" class="w-[19px] h-[19px]" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2 2 7l10 5 10-5-10-5Z" fill="currentColor"/>
+          <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="font-bold text-[15px] text-navy leading-tight">SkillTrack</div>
+        <div class="text-xs text-orange font-semibold">Maharashtra</div>
+      </div>
+    </div>
+    <div class="text-[10px] tracking-wide text-muted2 px-1 pt-2.5 pb-4 font-semibold">GOVERNMENT OF MAHARASHTRA</div>
+
+    <nav class="flex flex-col gap-0.5 flex-1">
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-bold bg-[#e9f1fd] text-navy" id="dashboardLink" href="/dashboard">
+        <span class="w-[18px] text-center text-sm opacity-90">▦</span> Dashboard
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="traineesLink" href="/trainees">
+        <span class="w-[18px] text-center text-sm opacity-90">◍</span> Trainees
+      </a>
+         <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="trainersLink" href="/trainers">
+        <span class="w-[18px] text-center text-sm opacity-90">◍</span> Trainers
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="coursesLink" href="/courses">
+        <span class="w-[18px] text-center text-sm opacity-90">▤</span> Courses
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="providersLink" href="/providers">
+        <span class="w-[18px] text-center text-sm opacity-90">⌂</span> Training Providers
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="employmentLink" href="/employment">
+        <span class="w-[18px] text-center text-sm opacity-90">💼</span> Employment Tracking
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="analysisLink" href="/analysis">
+        <span class="w-[18px] text-center text-sm opacity-90">📶</span> Skill Gap Analysis
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="reportsLink" href="/reports">
+        <span class="w-[18px] text-center text-sm opacity-90">▧</span> Reports
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="settingsLink" href="/settings">
+        <span class="w-[18px] text-center text-sm opacity-90">⚙</span> Settings
+      </a>
+    </nav>
+
+    <div class="border-t border-bordercol pt-3.5 mt-2.5 text-xs text-muted leading-relaxed">
+      <div>Skill Development</div>
+      <div>&amp; Entrepreneurship Dept.</div>
+      <div class="mt-1.5 text-muted2 text-[11px]">v2.4.1 · FY 2025–26</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="flex flex-col min-w-0">
+
+    <!-- TOPBAR -->
+    <header class="bg-white border-b border-bordercol flex items-center justify-between px-7 py-3.5">
+      <div>
+        <div class="text-xs text-muted">Government of Maharashtra · Skill Development</div>
+        <div class="text-[19px] font-bold mt-0.5">Dashboard</div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 bg-[#f4f6fa] border border-bordercol rounded-[9px] px-3 py-2 w-[280px]">
+          <span class="text-xs opacity-60">🔍</span>
+          <input type="text" placeholder="Search trainees, courses..." class="border-0 bg-transparent outline-none text-[13px] w-full">
+        </div>
+
+        <button id="bellBtn" class="relative border border-bordercol bg-white w-9 h-9 rounded-[9px] text-sm">
+          🔔<span class="absolute top-[7px] right-2 w-1.5 h-1.5 bg-red rounded-full"></span>
+        </button>
+
+        <div class="relative flex items-center gap-2 cursor-pointer p-1 rounded-[9px] hover:bg-[#f4f6fa]" id="profileToggle">
+          <div class="w-[34px] h-[34px] rounded-full bg-navy text-white font-bold text-[12.5px] flex items-center justify-center flex-shrink-0" id="avatarInitials">AM</div>
+          <div>
+            <div class="text-[13px] font-bold leading-tight" id="profileName">Loading…</div>
+            <div class="text-[11.5px] text-muted" id="profileRole">—</div>
+          </div>
+          <span class="text-muted text-xs">⌄</span>
+
+          <div id="profileMenu" class="hidden absolute top-[46px] right-0 bg-white border border-bordercol rounded-[10px] shadow-card w-[180px] p-1.5 flex-col z-20">
+            <a href="#" class="block px-2.5 py-2 rounded-[7px] text-[13px] hover:bg-[#f4f6fa]">My Profile</a>
+            <a href="#" class="block px-2.5 py-2 rounded-[7px] text-[13px] hover:bg-[#f4f6fa]">Account Settings</a>
+            <a href="#" class="block px-2.5 py-2 rounded-[7px] text-[13px] hover:bg-[#f4f6fa]">Activity Log</a>
+            <a href="#" class="block px-2.5 py-2 rounded-[7px] text-[13px] text-red hover:bg-[#f4f6fa]">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+     <div id="maincontent">
+    <main class="p-7 pb-16 max-w-[1560px]">
+     
+
+    <div class="bg-blue-600 mb-4 text-white p-6 md:p-8 rounded-xl shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-6">
+
+    <!-- Hero Content -->
+    <div class="space-y-2">
+
+        <!-- Label -->
+        <div class="inline-flex items-center gap-2 bg-blue-700/60 text-blue-100 text-sm font-medium px-3 py-1 rounded-full border border-blue-400/30">
+            🏛️ Programme Authority
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+            Authority Dashboard
+        </h1>
+
+        <!-- Description -->
+        <p class="text-blue-100 text-base sm:text-lg max-w-2xl">
+            Monitor trainees, training partners, batches and employment outcomes.
+        </p>
+
+    </div>
+
+    <!-- Create Batch Button (White bg, Blue text) -->
+    <a href="/batches/add/" class="inline-flex items-center justify-center gap-2 bg-white text-blue-600 hover:bg-blue-50 focus:ring-4 focus:ring-blue-300 font-semibold px-5 py-3 rounded-lg shadow transition-all duration-200 shrink-0">
+        <span class="text-xl font-bold leading-none">＋</span>
+        <span>Create New Batch</span>
+    </a>
+
+</div>
+
+      <div class="flex items-end justify-between mb-5">
+        <div>
+          <h1 class="text-2xl mb-1">Dashboard Overview</h1>
+          <p class="text-muted text-[12.5px]" id="lastUpdated">Last updated: — · Data as of FY 2025–26 Q2</p>
+        </div>
+        <button class="bg-navy text-white border-0 px-4 py-2.5 rounded-[9px] text-[13px] font-semibold hover:opacity-90">Export Report</button>
+      </div>
+
+      <!-- STAT CARDS -->
+      <section class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-4 mb-5" id="statsGrid"></section>
+
+      <!-- CHARTS ROW 1 -->
+      <section class="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-4 mb-4">
+        <div class="bg-white border border-bordercol rounded-2xl p-5 shadow-card">
+          <div class="flex items-start justify-between mb-3.5">
+            <div>
+              <h2 class="text-[15.5px] mb-0.5">Employment Trends</h2>
+              <p class="text-muted text-[12.5px]">Sep 2024 – Aug 2025</p>
+            </div>
+            <div class="flex gap-3.5" id="trendLegend"></div>
+          </div>
+          <div class="relative h-[280px]"><canvas id="trendChart"></canvas></div>
+        </div>
+
+        <div class="bg-white border border-bordercol rounded-2xl p-5 shadow-card">
+          <div class="flex items-start justify-between mb-3.5">
+            <div>
+              <h2 class="text-[15.5px] mb-0.5">Sector Distribution</h2>
+              <p class="text-muted text-[12.5px]">Trainees by industry sector</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="relative h-[190px] w-[190px] flex-shrink-0"><canvas id="sectorChart"></canvas></div>
+            <ul class="flex-1 grid grid-cols-2 gap-x-3.5 gap-y-2.5" id="sectorLegend"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHARTS ROW 2 -->
+      <section class="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-4 mb-4">
+        <div class="bg-white border border-bordercol rounded-2xl p-5 shadow-card">
+          <div class="flex items-start justify-between mb-3.5">
+            <div>
+              <h2 class="text-[15.5px] mb-0.5">District-wise Employment</h2>
+              <p class="text-muted text-[12.5px]">Employment rate by district</p>
+            </div>
+            <a href="#" class="text-[12.5px] text-brandblue font-semibold hover:underline">View all →</a>
+          </div>
+          <div class="relative h-[280px]"><canvas id="districtChart"></canvas></div>
+        </div>
+
+        <div class="bg-white border border-bordercol rounded-2xl p-5 shadow-card">
+          <div class="flex items-start justify-between mb-3.5">
+            <div>
+              <h2 class="text-[15.5px] mb-0.5">Top Performing Courses</h2>
+              <p class="text-muted text-[12.5px]">By employment rate</p>
+            </div>
+            <a href="#" class="text-[12.5px] text-brandblue font-semibold hover:underline">View all →</a>
+          </div>
+          <ol class="flex flex-col gap-3.5" id="courseList"></ol>
+        </div>
+      </section>
+
+      <!-- BOTTOM ROW -->
+      <section class="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-4">
+        <div class="bg-white border border-bordercol rounded-2xl p-5 shadow-card">
+          <div class="flex items-start justify-between mb-3.5">
+            <div>
+              <h2 class="text-[15.5px] mb-0.5">Recent Activity</h2>
+              <p class="text-muted text-[12.5px]">Live updates from the platform</p>
+            </div>
+          </div>
+          <ul class="flex flex-col gap-3" id="activityList"></ul>
+        </div>
+
+        <div class="bg-white border border-bordercol rounded-2xl p-5 shadow-card">
+          <div class="flex items-start justify-between mb-3.5">
+            <h2 class="text-[15.5px] mb-0.5">Action Required</h2>
+          </div>
+          <ul class="flex flex-col gap-3" id="actionList"></ul>
+
+          <div class="mt-4.5 mb-3 pt-4 border-t border-bordercol">
+            <h2 class="text-[15.5px] mb-0.5">Upcoming Batches</h2>
+          </div>
+          <ul class="flex flex-col gap-3" id="batchList"></ul>
+        </div>
+      </section>
+
+    </main>
+    </div>
+  </div>
+</div>
+
+<script src="/dashboard.js"></script>
+</body>
+</html>

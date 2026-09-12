@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillTrack Maharashtra</title>
+<link rel="stylesheet" href="/output.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+</head>
+<body>
+  <nav class="sticky top-0 z-10 border-b border-white/10 bg-navy/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
+      <a href="#" class="flex items-center gap-3 text-white">
+        <span class="grid size-10 place-items-center rounded-xl bg-brandblue text-sm font-black">ST</span>
+        <span><strong class="block text-sm">SkillTrack Maharashtra</strong><small class="text-xs text-blue-200">SKILL DEVELOPMENT &amp; EMPLOYMENT</small></span>
+      </a>
+      <div class="hidden items-center gap-6 text-sm text-blue-100 md:flex">
+        <a href="#overview" class="hover:text-white">Overview</a><a href="#training" class="hover:text-white">Training</a>
+        <a href="#analytics" class="hover:text-white">Analytics</a><a href="#employment" class="hover:text-white">Employment</a><a href="#about" class="hover:text-white">About</a>
+        <a href="/login" class="rounded-lg bg-white px-4 py-2 font-semibold text-navy hover:bg-blue-50">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-surface bg-navy text-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-1 py-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p class="mb-4 inline-flex rounded-full border border-blue-300/30 bg-white/10 px-3 py-1 text-xs text-blue-100">🇮🇳 Maharashtra Skill Development Programme</p>
+          <h1 class="max-w-xl text-3xl font-bold leading-tight">Connecting Skills to <span class="text-blue-300">Better Opportunities.</span></h1>
+          <p class="mt-4 max-w-xl text-sm leading-6 text-blue-100">One transparent platform for trainee registration, training programmes, verified partners and employment outcomes across Maharashtra.</p>
+          <div class="mt-5 flex flex-wrap gap-2"><a href="/login" class="rounded-lg bg-brandblue px-3 py-2 text-sm font-semibold shadow-lg shadow-brandblue/30 hover:bg-blue-500">Access Portal →</a><a href="#overview" class="rounded-lg border border-blue-200/40 px-3 py-2 text-sm font-semibold hover:bg-white/10">Explore Programme</a></div>
+        </div>
+        <div class="mx-auto grid aspect-square w-full max-w-56 place-items-center rounded-full border-4 border-white/10 bg-navy2 shadow-2xl shadow-black/30">
+          <div class="grid size-36 place-items-center rounded-full border border-blue-300/30 bg-white/10 p-4 text-center"><div><span class="text-3xl">🎓</span><h2 class="mt-2 text-base font-bold">SkillTrack</h2><p class="mt-1 text-xs leading-4 text-blue-100">Training, monitoring and employment outcomes in one place.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="mx-auto max-w-7xl px-2 py-10">
+      <header class="max-w-2xl"><p class="text-sm font-bold uppercase tracking-widest text-brandblue">Programme Overview</p><h2 class="mt-3 text-3xl font-bold">A unified view of the skill ecosystem</h2><p class="mt-4 leading-7 text-muted">Monitor trainees, providers, courses and programme participation from a single centralised platform.</p></header>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-lg border border-bordercol bg-white p-4 shadow-sm"><span class="text-xl">🎓</span><strong class="mt-3 block text-xl">48,260</strong><p class="mt-1 text-xs text-muted">Total Trainees</p></article>
+        <article class="rounded-lg border border-bordercol bg-white p-4 shadow-sm"><span class="text-xl">✓</span><strong class="mt-3 block text-xl">42,918</strong><p class="mt-1 text-xs text-muted">Verified Trainees</p></article>
+        <article class="rounded-lg border border-bordercol bg-white p-4 shadow-sm"><span class="text-xl">🏢</span><strong class="mt-3 block text-xl">386</strong><p class="mt-1 text-xs text-muted">Training Providers</p></article>
+        <article class="rounded-lg border border-bordercol bg-white p-4 shadow-sm"><span class="text-xl">📚</span><strong class="mt-3 block text-xl">124</strong><p class="mt-1 text-xs text-muted">Courses Available</p></article>
+      </div>
+    </section>
+
+    <section id="training" class="border-y border-bordercol bg-white"><div class="mx-auto max-w-7xl px-4 py-10">
+      <header class="max-w-2xl"><p class="text-sm font-bold uppercase tracking-widest text-teal">Training Ecosystem</p><h2 class="mt-3 text-3xl font-bold">From enrolment to completion</h2><p class="mt-4 leading-7 text-muted">Track official batches, active programmes, completion and verified trainers in one connected system.</p></header>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-lg bg-blue-50 p-4"><span class="text-xl">🗂️</span><p class="mt-3 text-xl font-bold">1,248</p><p class="mt-1 text-xs text-muted">Total Training Batches</p></div>
+        <div class="rounded-lg bg-teal/10 p-4"><span class="text-xl">⚡</span><p class="mt-3 text-xl font-bold">286</p><p class="mt-1 text-xs text-muted">Active Batches</p></div>
+        <div class="rounded-lg bg-green/10 p-4"><span class="text-xl">🏆</span><p class="mt-3 text-xl font-bold">842</p><p class="mt-1 text-xs text-muted">Completed Batches</p></div>
+        <div class="rounded-lg bg-orange/10 p-4"><span class="text-xl">👨‍🏫</span><p class="mt-3 text-xl font-bold">1,064</p><p class="mt-1 text-xs text-muted">Verified Trainers</p></div>
+      </div>
+    </div></section>
+
+    <section id="analytics" class="mx-auto max-w-7xl px-4 py-10">
+      <header class="max-w-2xl"><p class="text-sm font-bold uppercase tracking-widest text-purple">Data &amp; Analytics</p><h2 class="mt-3 text-3xl font-bold">Programme visibility through data</h2><p class="mt-4 leading-7 text-muted">Visualise participation across districts and sectors to support stronger planning decisions.</p></header>
+      <div class="mt-6 grid gap-4 lg:grid-cols-2">
+        <article class="rounded-lg border border-bordercol bg-white p-4 shadow-sm"><h3 class="text-sm font-bold">Trainees by District</h3><p class="mt-1 text-xs text-muted">Registered trainees in selected districts.</p><div class="mt-4 h-44"><canvas id="districtChart"></canvas></div></article>
+        <article class="rounded-lg border border-bordercol bg-white p-4 shadow-sm"><h3 class="text-sm font-bold">Training by Sector</h3><p class="mt-1 text-xs text-muted">Participation distribution by sector.</p><div class="mt-4 h-44"><canvas id="sectorChart"></canvas></div></article>
+      </div>
+    </section>
+
+    <section id="employment" class="mx-auto max-w-7xl px-4 pb-10"><div class="grid overflow-hidden rounded-lg bg-navy text-white lg:grid-cols-3">
+      <div class="grid place-items-center bg-navy2 p-5 text-center"><div><p class="text-4xl font-bold text-blue-300">72%</p><p class="mt-2 text-xs text-blue-100">Overall Employment Rate</p></div></div>
+      <div class="p-5 lg:col-span-2"><h2 class="text-lg font-bold">Tracking outcomes beyond training</h2><p class="mt-2 text-sm leading-5 text-blue-100">Employment follow-ups show whether trainees are employed, self-employed, continuing education or seeking opportunities after completion.</p><div class="mt-3 h-36"><canvas id="employmentChart"></canvas></div></div>
+    </div></section>
+
+    <section class="border-y border-bordercol bg-white"><div class="mx-auto max-w-7xl px-4 py-10">
+      <header class="max-w-2xl"><p class="text-sm font-bold uppercase tracking-widest text-orange">How It Works</p><h2 class="mt-3 text-3xl font-bold">A journey from registration to employment</h2></header>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <article class="rounded-lg border border-bordercol p-4"><b class="grid size-7 place-items-center rounded-full bg-brandblue text-xs text-white">1</b><h3 class="mt-3 text-sm font-bold">Registration</h3><p class="mt-2 text-xs leading-5 text-muted">Trainees, trainers and providers create accounts.</p></article>
+        <article class="rounded-lg border border-bordercol p-4"><b class="grid size-7 place-items-center rounded-full bg-teal text-xs text-white">2</b><h3 class="mt-3 text-sm font-bold">Verification</h3><p class="mt-2 text-xs leading-5 text-muted">Eligible people and records are verified.</p></article>
+        <article class="rounded-lg border border-bordercol p-4"><b class="grid size-7 place-items-center rounded-full bg-purple text-xs text-white">3</b><h3 class="mt-3 text-sm font-bold">Training</h3><p class="mt-2 text-xs leading-5 text-muted">Verified trainees join official batches.</p></article>
+        <article class="rounded-lg border border-bordercol p-4"><b class="grid size-7 place-items-center rounded-full bg-orange text-xs text-white">4</b><h3 class="mt-3 text-sm font-bold">Monitoring</h3><p class="mt-2 text-xs leading-5 text-muted">Progress and assessments are tracked.</p></article>
+        <article class="rounded-lg border border-bordercol p-4"><b class="grid size-7 place-items-center rounded-full bg-green text-xs text-white">5</b><h3 class="mt-3 text-sm font-bold">Employment</h3><p class="mt-2 text-xs leading-5 text-muted">Outcomes are followed after training.</p></article>
+      </div>
+    </div></section>
+
+    <section id="about" class="mx-auto max-w-7xl px-4 py-10"><div class="rounded-lg bg-blue-50 p-5 sm:p-6"><h2 class="text-xl font-bold">Built for transparent skill development</h2><p class="mt-3 max-w-3xl text-sm leading-6 text-muted">SkillTrack connects verified beneficiaries, providers, batch management and employment outcomes, creating better visibility for authorities and beneficiaries.</p><div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><div><span class="text-xl">🔐</span><h3 class="mt-2 text-sm font-bold">Verified Records</h3><p class="mt-1 text-xs leading-5 text-muted">Official participation is based on verified records.</p></div><div><span class="text-xl">📊</span><h3 class="mt-2 text-sm font-bold">Data Visibility</h3><p class="mt-1 text-xs leading-5 text-muted">A central view of participation and performance.</p></div><div><span class="text-xl">📈</span><h3 class="mt-2 text-sm font-bold">Training Tracking</h3><p class="mt-1 text-xs leading-5 text-muted">Progress throughout the training lifecycle.</p></div><div><span class="text-xl">💼</span><h3 class="mt-2 text-sm font-bold">Outcome Tracking</h3><p class="mt-1 text-xs leading-5 text-muted">Measure the real impact of each programme.</p></div></div></div></section>
+  </main>
+  <footer class="bg-navy text-blue-100"><div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-xs sm:flex-row sm:items-center sm:justify-between"><div><strong class="block text-sm text-white">SkillTrack Maharashtra</strong><span>Maharashtra Skill Development &amp; Employment Monitoring Portal</span></div><span>© 2026 SkillTrack Maharashtra · Digital Programme Platform</span></div></footer>
+
+  <script>
+    const colors = { blue: '#2f6fed', teal: '#1596a9', orange: '#ef8a3f', green: '#1f9d55', purple: '#7c5cd6' };
+    const defaults = { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { usePointStyle: true, padding: 18 } } } };
+    new Chart(document.querySelector('#districtChart'), { type: 'bar', data: { labels: ['Pune', 'Mumbai', 'Nashik', 'Nagpur', 'Thane'], datasets: [{ label: 'Trainees', data: [9450, 8120, 6840, 5930, 7210], backgroundColor: colors.blue, borderRadius: 6 }] }, options: { ...defaults, scales: { y: { beginAtZero: true, grid: { color: '#e6e9f0' } }, x: { grid: { display: false } } } } });
+    new Chart(document.querySelector('#sectorChart'), { type: 'doughnut', data: { labels: ['IT & ITES', 'Healthcare', 'Manufacturing', 'Retail', 'Other'], datasets: [{ data: [28, 22, 19, 16, 15], backgroundColor: [colors.blue, colors.teal, colors.orange, colors.purple, colors.green], borderWidth: 0 }] }, options: { ...defaults, cutout: '64%' } });
+    new Chart(document.querySelector('#employmentChart'), { type: 'bar', data: { labels: ['Employed', 'Self-employed', 'Further training', 'Seeking work'], datasets: [{ data: [56, 16, 12, 16], backgroundColor: [colors.green, colors.teal, colors.purple, colors.orange], borderRadius: 6 }] }, options: { ...defaults, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, max: 60, ticks: { color: '#c8d8ef' }, grid: { color: '#31517a' } }, x: { ticks: { color: '#c8d8ef' }, grid: { display: false } } } } });
+  </script>
+</body>
+</html>

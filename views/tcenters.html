@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillTrack Maharashtra · Training Centers</title>
+
+  <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-bgapp text-[#16223f] text-sm font-sans m-0">
+
+<div class="grid grid-cols-[248px_1fr] min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="bg-white border-r border-bordercol p-5 px-4 flex flex-col">
+    <div class="flex items-center gap-2.5 px-1">
+      <div class="w-9 h-9 rounded-[9px] bg-navy text-white flex items-center justify-center flex-shrink-0">
+        <svg viewBox="0 0 24 24" fill="none" class="w-[19px] h-[19px]" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2 2 7l10 5 10-5-10-5Z" fill="currentColor"/>
+          <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="font-bold text-[15px] text-navy leading-tight">SkillTrack</div>
+        <div class="text-xs text-orange font-semibold">Maharashtra</div>
+      </div>
+    </div>
+    <div class="text-[10px] tracking-wide text-muted2 px-1 pt-2.5 pb-4 font-semibold">GOVERNMENT OF MAHARASHTRA</div>
+
+ <nav class="flex flex-col gap-0.5 flex-1">
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-bold text-[#55617a] " id="dashboardLink" href="/dashboard">
+        <span class="w-[18px] text-center text-sm opacity-90">▦</span> Dashboard
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a]  hover:bg-[#f4f6fa]" id="traineesLink" href="/trainees">
+        <span class="w-[18px] text-center text-sm opacity-90">◍</span> Trainees
+      </a>
+         <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="trainersLink" href="/trainers">
+        <span class="w-[18px] text-center text-sm opacity-90">◍</span> Trainers
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="coursesLink" href="/courses">
+        <span class="w-[18px] text-center text-sm opacity-90">▤</span> Courses
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium  bg-[#e9f1fd] text-navy hover:bg-[#f4f6fa]" id="providersLink" href="/providers">
+        <span class="w-[18px] text-center text-sm opacity-90">⌂</span> Training Providers
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="employmentLink" href="/employment">
+        <span class="w-[18px] text-center text-sm opacity-90">💼</span> Employment Tracking
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="analysisLink" href="/analysis">
+        <span class="w-[18px] text-center text-sm opacity-90">📶</span> Skill Gap Analysis
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="reportsLink" href="/reports">
+        <span class="w-[18px] text-center text-sm opacity-90">▧</span> Reports
+      </a>
+      <a class="flex items-center gap-2.5 px-2.5 py-2 rounded-[9px] text-[13.5px] font-medium text-[#55617a] hover:bg-[#f4f6fa]" id="settingsLink" href="/settings">
+        <span class="w-[18px] text-center text-sm opacity-90">⚙</span> Settings
+      </a>
+    </nav>
+
+    <div class="border-t border-bordercol pt-3.5 mt-2.5 text-xs text-muted leading-relaxed">
+      <div>Skill Development</div>
+      <div>&amp; Entrepreneurship Dept.</div>
+      <div class="mt-1.5 text-muted2 text-[11px]">v2.4.1 · FY 2025–26</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="flex flex-col min-w-0">
+
+    <!-- TOPBAR -->
+    <header class="bg-white border-b border-bordercol flex items-center justify-between px-7 py-3.5">
+      <div>
+        <div class="text-xs text-muted">Government of Maharashtra · Skill Development</div>
+        <div class="text-[19px] font-bold mt-0.5">Training Centers</div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 bg-[#f4f6fa] border border-bordercol rounded-[9px] px-3 py-2 w-[280px]">
+          <span class="text-xs opacity-60">🔍</span>
+          <input type="text" placeholder="Search trainees, courses..." class="border-0 bg-transparent outline-none text-[13px] w-full">
+        </div>
+
+        <button class="relative border border-bordercol bg-white w-9 h-9 rounded-[9px] text-sm">
+          🔔<span class="absolute top-[7px] right-2 w-1.5 h-1.5 bg-red rounded-full"></span>
+        </button>
+
+        <div class="flex items-center gap-2 p-1 rounded-[9px]">
+          <div class="w-[34px] h-[34px] rounded-full bg-navy text-white font-bold text-[12.5px] flex items-center justify-center flex-shrink-0">AM</div>
+          <div>
+            <div class="text-[13px] font-bold leading-tight">Amit Mehere</div>
+            <div class="text-[11.5px] text-muted">Admin Officer</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="p-7 pb-16 max-w-[1560px]">
+
+      <!-- HEADING BANNER -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-navy to-navy2 text-white p-7 mb-5 shadow-card">
+        <div class="absolute -right-10 -top-16 w-56 h-56 rounded-full bg-white/5"></div>
+        <div class="absolute right-24 -bottom-20 w-40 h-40 rounded-full bg-white/5"></div>
+
+        <div class="relative flex flex-wrap items-start justify-between gap-5">
+          <div>
+            <h1 class="text-2xl font-bold mb-1">Training Centers</h1>
+            <p class="text-white/70 text-[12.5px]">Registered training centers delivering skill programs across Maharashtra</p>
+          </div>
+          <a href="/centers/add" class="flex items-center gap-2 bg-white text-navy px-4 py-2.5 rounded-[9px] text-[13px] font-semibold hover:bg-white/90">
+            <span class="text-base leading-none">+</span> Add Training Center
+          </a>
+        </div>
+
+        <div class="relative flex flex-wrap gap-3 mt-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[12px] px-4 py-3 min-w-[150px]">
+            <div class="text-white/60 text-[11.5px] font-semibold">Total Centers</div>
+            <div class="text-xl font-extrabold mt-0.5">486</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[12px] px-4 py-3 min-w-[150px]">
+            <div class="text-white/60 text-[11.5px] font-semibold">Active</div>
+            <div class="text-xl font-extrabold mt-0.5 text-green-300">438</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[12px] px-4 py-3 min-w-[150px]">
+            <div class="text-white/60 text-[11.5px] font-semibold">Inactive</div>
+            <div class="text-xl font-extrabold mt-0.5 text-red-300">48</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[12px] px-4 py-3 min-w-[150px]">
+            <div class="text-white/60 text-[11.5px] font-semibold">Avg. Rating</div>
+            <div class="text-xl font-extrabold mt-0.5">4.3 ★</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH / FILTER BAR -->
+      <div class="bg-white border border-bordercol rounded-2xl shadow-card p-4 mb-5 flex flex-wrap items-center gap-3">
+        <div class="flex items-center gap-2 bg-[#f4f6fa] border border-bordercol rounded-[9px] px-3 py-2.5 flex-1 min-w-[220px] focus-within:ring-2 focus-within:ring-brandblue/30 focus-within:border-brandblue">
+          <span class="text-xs opacity-60">🔍</span>
+          <input type="text" placeholder="Search by center name..." class="border-0 bg-transparent outline-none text-[13px] w-full">
+        </div>
+
+        <select class="bg-white border border-bordercol rounded-[9px] px-3 py-2.5 text-[13px] text-[#55617a] outline-none hover:border-navy2/30">
+          <option>All Types</option>
+          <option>Government</option>
+          <option>Private</option>
+          <option>NGO</option>
+          <option>Corporate</option>
+        </select>
+
+        <select class="bg-white border border-bordercol rounded-[9px] px-3 py-2.5 text-[13px] text-[#55617a] outline-none hover:border-navy2/30">
+          <option>All Districts</option>
+          <option>Mumbai</option>
+          <option>Pune</option>
+          <option>Nagpur</option>
+          <option>Nashik</option>
+          <option>Thane</option>
+          <option>Kolhapur</option>
+          <option>Solapur</option>
+        </select>
+
+        <select class="bg-white border border-bordercol rounded-[9px] px-3 py-2.5 text-[13px] text-[#55617a] outline-none hover:border-navy2/30">
+          <option>All Status</option>
+          <option>Active</option>
+          <option>Inactive</option>
+        </select>
+
+        <button class="bg-navy text-white px-4 py-2.5 rounded-[9px] text-[13px] font-semibold hover:opacity-90">
+          Filter
+        </button>
+      </div>
+
+      <!-- TABLE -->
+      <div class="bg-white border border-bordercol rounded-2xl shadow-card overflow-hidden">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-[#eef2fa] border-b border-bordercol">
+              <th class="px-5 py-3.5 text-[11.5px] font-bold text-navy2 uppercase tracking-wide">Name</th>
+              <th class="px-5 py-3.5 text-[11.5px] font-bold text-navy2 uppercase tracking-wide">Type</th>
+              <th class="px-5 py-3.5 text-[11.5px] font-bold text-navy2 uppercase tracking-wide">District</th>
+              <th class="px-5 py-3.5 text-[11.5px] font-bold text-navy2 uppercase tracking-wide">Rating</th>
+              <th class="px-5 py-3.5 text-[11.5px] font-bold text-navy2 uppercase tracking-wide">Status</th>
+            </tr>
+          </thead>
+       <tbody id="centresTableBody" class="divide-y divide-bordercol">
+</tbody>
+        </table>
+
+        <!-- FOOTER / PAGINATION (static) -->
+        <div class="flex items-center justify-between px-5 py-4 border-t border-bordercol">
+          <span class="text-[12.5px] text-muted">Showing 1–10 of 486 training centers</span>
+          <div class="flex items-center gap-1.5">
+            <button class="px-3 py-1.5 rounded-[8px] border border-bordercol text-[12.5px] text-[#55617a] hover:bg-[#f4f6fa]">Prev</button>
+            <button class="px-3 py-1.5 rounded-[8px] bg-navy text-white text-[12.5px] font-semibold">1</button>
+            <button class="px-3 py-1.5 rounded-[8px] border border-bordercol text-[12.5px] text-[#55617a] hover:bg-[#f4f6fa]">2</button>
+            <button class="px-3 py-1.5 rounded-[8px] border border-bordercol text-[12.5px] text-[#55617a] hover:bg-[#f4f6fa]">3</button>
+            <button class="px-3 py-1.5 rounded-[8px] border border-bordercol text-[12.5px] text-[#55617a] hover:bg-[#f4f6fa]">Next</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+<script>
+async function loadCentres() {
+  const tbody = document.getElementById('centresTableBody');
+
+  try {
+    const response = await fetch('/centresdata');
+    const result = await response.json();
+
+    if (!response.ok || result.error) {
+      throw new Error(result.error?.message || 'Failed to load centres');
+    }
+
+    const centres = result.data || [];
+
+    if (centres.length === 0) {
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="5" class="px-5 py-8 text-center text-[13px] text-[#55617a]">
+            No training centres found
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    tbody.innerHTML = centres.map(centre => {
+      const status = centre.status ?? '';
+      const isActive = status.toLowerCase() === 'active';
+
+      const statusClass = isActive
+        ? 'bg-[#e5f7ec] text-green'
+        : 'bg-[#e3f6f8] text-teal';
+
+      const dotClass = isActive
+        ? 'bg-green'
+        : 'bg-teal';
+
+      const pulseClass = isActive
+        ? ''
+        : 'animate-pulse';
+
+      return `
+        <tr class="hover:bg-[#f8f9fb] transition-colors">
+
+          <td class="px-5 py-3.5 text-[13px] font-semibold">
+            ${escapeHtml(centre.name ?? '')}
+          </td>
+
+          <td class="px-5 py-3.5 text-[13px] text-[#55617a]">
+            ${escapeHtml(centre.type ?? '')}
+          </td>
+
+          <td class="px-5 py-3.5 text-[13px] text-[#55617a]">
+            ${escapeHtml(centre.district ?? '')}
+          </td>
+
+          <td class="px-5 py-3.5 text-[13px] font-semibold">
+            ${escapeHtml(centre.rating ?? '')}
+          </td>
+
+          <td class="px-5 py-3.5">
+            <span class="inline-flex items-center gap-1.5 ${statusClass} text-xs font-semibold px-2.5 py-1 rounded-full">
+              <span class="w-1.5 h-1.5 rounded-full ${dotClass} ${pulseClass}"></span>
+              ${escapeHtml(status)}
+            </span>
+          </td>
+
+        </tr>
+      `;
+    }).join('');
+
+  } catch (error) {
+    console.error('Error loading centres:', error);
+
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="5" class="px-5 py-8 text-center text-[13px] text-red">
+          Failed to load training centres
+        </td>
+      </tr>
+    `;
+  }
+}
+
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+
+document.addEventListener('DOMContentLoaded', loadCentres);
+
+
+</script>
+</html>

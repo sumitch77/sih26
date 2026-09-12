@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Trainee | SkillPortal</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f5f9] text-[#122c52] font-sans min-h-screen flex flex-col">
+
+  <!-- Top Header Navigation -->
+  <header class="bg-[#122c52] border-b border-[#1c3a68] h-16 flex items-center justify-between px-6 sticky top-0 z-50">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 bg-[#2f6fed] rounded-lg text-white font-bold text-xl flex items-center justify-center shadow">S</div>
+      <div>
+        <h1 class="text-white font-bold text-base leading-tight">SkillPortal</h1>
+        <p class="text-[#aab1bf] text-xs">Training & Placement Engine</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-5">
+      <div class="relative w-72">
+        <svg class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 stroke-[#aab1bf]" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search trainees, batches..." class="w-full bg-[#1c3a68] text-white text-sm rounded-lg pl-9 pr-4 py-2 placeholder-[#aab1bf] focus:outline-none focus:ring-2 focus:ring-[#2f6fed]">
+      </div>
+
+      <div class="flex items-center gap-3 pl-4 border-l border-[#1c3a68]">
+        <div class="w-8 h-8 rounded-full bg-[#7c5cd6] text-white font-semibold text-sm flex items-center justify-center">AD</div>
+        <div>
+          <p class="text-white font-semibold text-xs leading-none">Admin User</p>
+          <p class="text-[#aab1bf] text-xs mt-1">Super Admin</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- App Layout -->
+  <div class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#122c52] border-r border-[#1c3a68] p-4 text-white">
+      <p class="text-[11px] font-bold text-[#aab1bf] uppercase tracking-wider mb-3 px-3">Core Modules</p>
+      <nav class="space-y-1">
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#aab1bf] hover:bg-[#1c3a68] hover:text-white text-sm font-medium transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          Dashboard Overview
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#2f6fed] text-white text-sm font-medium shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/></svg>
+          Add Trainee
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#aab1bf] hover:bg-[#1c3a68] hover:text-white text-sm font-medium transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          All Trainees
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 overflow-y-auto">
+      <div class="flex justify-between items-start mb-6">
+        <div>
+          <div class="text-xs text-[#8992a3] mb-1">Trainee Management / <span class="text-[#2f6fed] font-semibold">Add Trainee</span></div>
+          <h2 class="text-2xl font-extrabold text-[#122c52]">Add New Trainee</h2>
+          <p class="text-sm text-[#8992a3]">Register a new candidate into the skill training program.</p>
+        </div>
+        <button class="bg-white border border-[#e6e9f0] text-[#122c52] px-5 py-2 rounded-lg font-semibold text-sm hover:bg-slate-50 transition">Cancel</button>
+      </div>
+
+      <!-- TRAINEE DETAILS CARD WITH TAILWIND BLUE THEME -->
+      <div class="max-w-4xl bg-white border-2 border-[#1c3a68] rounded-2xl shadow-xl overflow-hidden">
+        
+        <!-- Blue Header -->
+        <div class="bg-gradient-to-r from-[#122c52] to-[#1c3a68] p-5 flex items-center gap-4 border-b-4 border-[#2f6fed]">
+          <div class="w-11 h-11 rounded-xl bg-[#2f6fed]/20 border border-white/10 text-[#3b82f6] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white">Trainee Details</h3>
+            <p class="text-xs text-[#aab1bf]">Fill out the required beneficiary details below.</p>
+          </div>
+        </div>
+
+        <!-- Form Fields -->
+        <form class="p-7 bg-white">
+          <div class="grid grid-cols-2 gap-6">
+            
+            <!-- Beneficiary ID -->
+            <div class="flex flex-col gap-1.5">
+              <label class="text-[11px] font-extrabold text-[#122c52] uppercase tracking-wider">
+                Beneficiary ID <span class="text-red-500">*</span>
+              </label>
+              <input type="text" placeholder="e.g. BEN-131" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-[#122c52] placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-[#2f6fed] focus:ring-4 focus:ring-[#2f6fed]/20 transition">
+              <p class="text-xs text-slate-500">Unique registration identifier assigned to the candidate.</p>
+            </div>
+
+            <!-- Full Name -->
+            <div class="flex flex-col gap-1.5">
+              <label class="text-[11px] font-extrabold text-[#122c52] uppercase tracking-wider">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input type="text" placeholder="e.g. Rahul Sharma" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-[#122c52] placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-[#2f6fed] focus:ring-4 focus:ring-[#2f6fed]/20 transition">
+            </div>
+
+            <!-- District -->
+            <div class="flex flex-col gap-1.5">
+              <label class="text-[11px] font-extrabold text-[#122c52] uppercase tracking-wider">
+                District <span class="text-red-500">*</span>
+              </label>
+              <select required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-[#122c52] focus:outline-none focus:bg-white focus:border-[#2f6fed] focus:ring-4 focus:ring-[#2f6fed]/20 transition">
+                <option value="" disabled selected>Select District</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="bengaluru">Bengaluru</option>
+              </select>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="flex flex-col gap-1.5">
+              <label class="text-[11px] font-extrabold text-[#122c52] uppercase tracking-wider">
+                Phone Number <span class="text-red-500">*</span>
+              </label>
+              <input type="tel" placeholder="e.g. +91 98765 43210" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-[#122c52] placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-[#2f6fed] focus:ring-4 focus:ring-[#2f6fed]/20 transition">
+            </div>
+
+          </div>
+
+          <div class="mt-7 pt-5 border-t border-slate-200 flex justify-end">
+            <button type="submit" class="bg-gradient-to-r from-[#2f6fed] to-[#1c3a68] text-white font-bold text-sm px-8 py-3 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all">
+              Add Trainee
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

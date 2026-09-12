@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | SkillTrack Maharashtra</title>
+<link rel="stylesheet" href="/output.css">
+  </head>
+
+  <body
+    class="min-h-screen bg-[#f7f5f0] bg-[radial-gradient(rgba(20,33,61,0.08)_1px,transparent_1px)] bg-[length:22px_22px] flex items-center justify-center px-4 py-8"
+  >
+    <div
+      class="grid w-full max-w-6xl grid-cols-1 overflow-hidden rounded-3xl border border-[#14213d]/10 bg-white shadow-[0_24px_70px_rgba(20,33,61,0.12)] lg:min-h-[calc(100vh-4rem)] lg:grid-cols-[31%_1fr]"
+    >
+      <aside
+        class="relative overflow-hidden bg-[#14213d] p-7 text-white sm:p-10"
+      >
+        <div
+          class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e06c3b] font-[Space_Grotesk] text-lg font-bold tracking-wide text-white shadow-[0_12px_24px_rgba(224,108,59,0.25)]"
+          aria-hidden="true"
+        >
+          ST
+        </div>
+        <p
+          class="mt-9 text-xs font-bold uppercase tracking-[0.14em] text-[#f7b49a]"
+        >
+          Maharashtra skill network
+        </p>
+        <h1
+          class="mt-3 max-w-xs font-[Space_Grotesk] text-4xl font-bold leading-tight text-white sm:text-5xl"
+        >
+          Build a future with the right skills.
+        </h1>
+        <p class="mt-5 max-w-xs leading-7 text-[#b6c0d1]">
+          One place for trainees, trainers, and the teams working to connect
+          learning with opportunity.
+        </p>
+        <div
+          class="relative z-10 mt-16 grid gap-4 text-sm text-[#d6ddeb] max-lg:hidden"
+        >
+          <div>
+            <span
+              class="mr-2.5 inline-grid h-7 w-7 place-items-center rounded-full border border-white/30 text-xs font-bold text-[#f7b49a]"
+              >01</span
+            >Verified training pathways
+          </div>
+          <div>
+            <span
+              class="mr-2.5 inline-grid h-7 w-7 place-items-center rounded-full border border-white/30 text-xs font-bold text-[#f7b49a]"
+              >02</span
+            >Progress that stays connected
+          </div>
+          <div>
+            <span
+              class="mr-2.5 inline-grid h-7 w-7 place-items-center rounded-full border border-white/30 text-xs font-bold text-[#f7b49a]"
+              >03</span
+            >Opportunities that move with you
+          </div>
+        </div>
+      </aside>
+
+      <main class="min-w-0 bg-white p-8 sm:p-14 lg:p-16">
+        <a
+          class="mb-8 inline-flex text-sm text-[#667085] no-underline hover:text-[#bd4e27]"
+          href="/"
+          >&larr; SkillTrack home</a
+        >
+        <div class="mb-8 max-w-xl">
+          <h2
+            class="font-[Space_Grotesk] text-4xl font-bold leading-tight text-[#14213d] sm:text-5xl"
+          >
+            Welcome back
+          </h2>
+          <p class="mt-3 text-[#667085]">
+            Sign in to continue to your SkillTrack workspace.
+          </p>
+        </div>
+
+        <div>
+          <div id="loginForm" class="mb-6 max-w-sm">
+            <div class="mb-5">
+              <label
+                for="username"
+                class="block text-sm font-medium text-slate-700 mb-2"
+              >
+                Username
+              </label>
+
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none transition focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-slate-400"
+              />
+              <p
+                data-error-for="username"
+                class="mt-1 hidden text-sm text-red-600"
+                role="alert"
+              ></p>
+            </div>
+
+            <div class="mb-6">
+              <label
+                for="password"
+                class="block text-sm font-medium text-slate-700 mb-2"
+              >
+                Password
+              </label>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 outline-none transition focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-slate-400"
+              />
+              <p
+                data-error-for="password"
+                class="mt-1 hidden text-sm text-red-600"
+                role="alert"
+              ></p>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white shadow-[0_8px_18px_rgba(37,99,235,0.22)] transition duration-200 hover:bg-blue-700 hover:-translate-y-px active:translate-y-0"
+            >
+              Sign in securely
+            </button>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-200">
+            <p class="text-center text-sm text-slate-500 mt-1">
+              Don't have an account yet?
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+              <a
+                href="/traineelogin"
+                class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-blue-200 bg-blue-50 text-blue-700 font-medium hover:bg-blue-100 transition"
+              >
+                <span aria-hidden="true">01</span>
+                <span>Trainee Registration</span>
+              </a>
+
+              <a
+                href="/trainerlogin"
+                class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-purple-200 bg-purple-50 text-purple-700 font-medium hover:bg-purple-100 transition"
+              >
+                <span aria-hidden="true">02</span>
+                <span>Trainer Registration</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      const loginForm = document.querySelector("#loginForm");
+      const username = document.querySelector("#username");
+      const password = document.querySelector("#password");
+      const showLoginError = (field, message) => {
+        const error = document.querySelector(`[data-error-for="${field.id}"]`);
+        field.classList.toggle("border-red-500", Boolean(message));
+        field.classList.toggle("border-slate-300", !message);
+        error.textContent = message;
+        error.classList.toggle("hidden", !message);
+      };
+
+      loginForm.addEventListener("click", async(event) => {
+        event.preventDefault();
+        let valid = true;
+
+        loginForm.querySelectorAll("input").forEach((field) => {
+          const message = field.value.trim()
+            ? ""
+            : `${field.previousElementSibling.textContent.trim()} is required.`;
+          showLoginError(field, message);
+          valid = valid && !message;
+        });
+
+        if (valid) {
+    const loginResponse = await fetch('/login ', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: username.value,
+                password: password.value
+            })
+        });
+
+        const data2 = await loginResponse.json();
+        if(data2.success) {
+          
+            window.location.href = '/dashboard';
+        } else {
+          
+            showLoginError(username, data2.message || 'Invalid username or password.');
+        }
+      }else{
+        showLoginError(username, 'Please fill in all required fields.');
+      }
+      });
+
+      loginForm.querySelectorAll("input").forEach((field) => {
+        field.addEventListener("input", () => showLoginError(field, ""));
+      });
+    </script>
+  </body>
+</html>
